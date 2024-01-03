@@ -1,0 +1,428 @@
+extends includes/master
+
+block vars
+	- var script = 1;
+	- var css = 1;
+	- var title = 'Landing Tips | Claro Perú';
+	- var modal = 1;
+
+block content
+	.page1
+		.portlet(data-portlet="steps")
+			.section(data-section)
+				.section__modals(data-content="modals")
+
+					.section__modals__item 
+						.content
+							a.content__download(href=path+"assets/modals/modal1.png" download="Sigue estos 5 pasos para tener una buena conexión en casa.")
+							.content__close
+							.content__image 
+								img(src=path+"assets/modals/modal1.png" alt="")
+
+					.section__modals__item 
+						.content
+							.content__close
+							.content__group 
+								h2.content__group-title ¿Cuál es la mejor ubicación para tu router?
+							.content__image 
+								img(src=path+"assets/modals/modal2-1.png" alt="")
+							.content__section 
+								.content__section__left 
+									img(src=path+"assets/modals/icon_section.jpg" alt="")
+								.content__section__right 
+									p.content__section__right-text Evita ubicarlo 
+										strong dentro de un mueble, cerca del suelo o techo.
+							.content__group 
+								h2.content__group-title Mantenlo alejado de estos objetos
+							.content__image 
+								img(src=path+"assets/modals/modal2-2.png" alt="")
+
+					.section__modals__item 
+						.content
+							.content__close
+							.content__group 
+								h2.content__group-title Tu velocidad ideal depende de:
+							.content__section 
+								.content__section__left 
+									img(src=path+"assets/modals/icon_check.jpg" alt="")
+								.content__section__right 
+									p.content__section__right-text 
+										strong ¡Ya lo sabes! 
+										| Si tienes muchos equipos conectados, necesitas más velocidad para un funcionamiento óptimo.
+
+					.section__modals__item 
+						.content
+							.content__close
+							.content__group 
+								h2.content__group-title Asegúrate que tus equipos cumplan estas características para aprovechar mejor tu velocidad.
+							.content__section 
+								.content__section__left 
+									img(src=path+"assets/modals/icon_car.png" alt="")
+								.content__section__right 
+									p.content__section__right-text 
+										strong ¡Recuerda! 
+										| Mientras que la banda 
+										strong 2.4GHz 
+										| brinda mayor alcance, la banda 
+										strong 5Ghz 
+										| prioriza la rapidez.
+
+					.section__modals__item 
+						.content
+							.content__close
+							.content__group 
+								h2.content__group-title Asegúrate que tus equipos cumplan estas características para aprovechar mejor tu velocidad.
+							.content__image 
+								img(src=path+"assets/modals/modal4.png" alt="")
+							.content__section 
+								.content__section__left 
+									img(src=path+"assets/modals/icon_wifi.png" alt="")
+								.content__section__right 
+									p.content__section__right-text 
+										strong ¡Recuerda! 
+										| Las paredes y puertas debilitan la señal WiFi, por ello es importante usar repetidores.
+
+					.section__modals__item 
+						.content
+							.content__close
+							.content__group 
+								h2.content__group-title Asegúrate que tus equipos cumplan estas características para aprovechar mejor tu velocidad.
+							.content__image 
+								img(src=path+"assets/modals/modal4.png" alt="")
+							.content__section 
+								.content__section__left 
+									img(src=path+"assets/modals/icon_wifi.png" alt="")
+								.content__section__right 
+									p.content__section__right-text 
+										strong ¡Recuerda! 
+										| Las paredes y puertas debilitan la señal WiFi, por ello es importante usar repetidores.
+
+
+
+
+
+				.section__align 
+					.section__header 
+						hgroup.section__header__group 
+							h2.section__header__group-title Sigue los 5 pasos para tener una buena conexión
+					.section__main 
+						.slider 
+							.slider__main(id="slider_5steps") 
+								.itemCard
+									.itemCard__header 
+										img(src=path+"assets/steps/step0.png" alt="")
+									.itemCard__main 
+										.itemCard__main__content 
+											h2.itemCard__main__content-title 
+												//- span 1
+												| ¡Aquí te lo resumimos!
+											p.itemCard__main__content-text Sigue estos 5 pasos para tener una buena conexión en casa.
+										.itemCard__main__footer 
+											a.itemCard__main__footer-link() Conoce más aquí
+								.itemCard.active
+									.itemCard__header 
+										img(src=path+"assets/steps/step1.png" alt="")
+									.itemCard__main 
+										.itemCard__main__content 
+											h2.itemCard__main__content-title 
+												span 1
+												| Ubica correctamente tu router y repetidores
+											p.itemCard__main__content-text Colócalos en una mesa alejados de dispositivos inalámbricos, muros, techos y ventanas pues estos interfieren con tu señal.
+										.itemCard__main__footer 
+											a.itemCard__main__footer-link() Conoce más aquí
+								.itemCard
+									.itemCard__header 
+										img(src=path+"assets/steps/step2.png" alt="")
+									.itemCard__main 
+										.itemCard__main__content 
+											h2.itemCard__main__content-title 
+												span 2
+												| Elige el plan de internet adecuado
+											p.itemCard__main__content-text Mientras más equipos conectes a la vez, tu velocidad de internet será menor.
+										.itemCard__main__footer 
+											a.itemCard__main__footer-link() Conoce más aquí
+								.itemCard
+									.itemCard__header 
+										img(src=path+"assets/steps/step3.png" alt="")
+									.itemCard__main 
+										.itemCard__main__content 
+											h2.itemCard__main__content-title 
+												span 3
+												| Usa equipos modernos para aprovechar tu velocidad
+
+											p.itemCard__main__content-text Asegúrate de tener un software actualizado y un equipo en buen estado.
+										.itemCard__main__footer 
+											a.itemCard__main__footer-link() Conoce más aquí
+								.itemCard
+									.itemCard__header 
+										img(src=path+"assets/steps/step4.png" alt="")
+									.itemCard__main 
+										.itemCard__main__content 
+											h2.itemCard__main__content-title 
+												span 4
+												| Potencia tu señal con repetidores
+											p.itemCard__main__content-text Captan tu señal WiFi y la retransmiten con mayor intensidad en zonas con señal débil.
+										.itemCard__main__footer 
+											a.itemCard__main__footer-link() Conoce más aquí
+								.itemCard
+									.itemCard__header 
+										img(src=path+"assets/steps/step5.png" alt="")
+									.itemCard__main 
+										.itemCard__main__content 
+											h2.itemCard__main__content-title 
+												span 5
+												| Usa tu app Smart Home
+											p.itemCard__main__content-text Verifica si tus servicios Claro Hogar están funcionando bien, cambia tu clave WiFi, haz seguimiento a tus visitas técnicas y más. 
+										.itemCard__main__footer 
+											a.itemCard__main__footer-link() Conoce más aquí
+
+
+		.portlet(data-portlet="tuinternet")
+			.section(data-section)
+				.section__align 
+					.section__header 
+						hgroup.section__header__group 
+							h2.section__header__group-title Conoce cómo aprovechar tu internet al máximo
+					.section__main(data-show="sectionInternet") 
+						.section__views 
+							.section__views__view 
+								.section__views__view__group 
+									h3.section__views__view__group-title Ubica correctamente tu router y repetidores
+									p.section__views__view__group-text Colócalos en una mesa libre de interferencias para mejorar el alcance de tu señal.
+								.section__views__view__iframe 
+									iframe(width="750" height="421" src="https://www.youtube.com/embed/KwbnLL7KY9w" title="Ubicación de router" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen)
+
+							.section__views__view 
+								.section__views__view__group 
+									h3.section__views__view__group-title Elige el plan de internet adecuado
+									p.section__views__view__group-text Tu plan ideal depende de los usos que le das a tu internet y de cuántos equipos conectas.
+								.section__views__view__iframe 
+									iframe(width="750" height="421" src="https://www.youtube.com/embed/esfOTSFHzM8" title="Ubicación de router" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen)
+
+							.section__views__view 
+								.section__views__view__group 
+									h3.section__views__view__group-title Usa equipos modernos para aprovechar tu velocidad.
+									p.section__views__view__group-text Tus dispositivos deben estar en buen estado y contar con software actualizado.
+								.section__views__view__iframe 
+									iframe(width="750" height="421" src="https://www.youtube.com/embed/JVaJ9YikO_E" title="Ubicación de router" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen)
+
+							.section__views__view 
+								.section__views__view__group 
+									h3.section__views__view__group-title Potencia tu señal con repetidores
+									p.section__views__view__group-text Haz que tu señal llegue hasta donde necesites con repetidores WiFi.
+								.section__views__view__iframe 
+									iframe(width="750" height="421" src="https://www.youtube.com/embed/jiGnlC2aMpg" title="Ubicación de router" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen)
+
+							.section__views__view 
+								.section__views__view__group 
+									h3.section__views__view__group-title 5 pasos para mejorar tu experiencia de conexión
+									p.section__views__view__group-text Estos consejos te ayudarán a disfrutar una mejor experiencia.
+								.section__views__view__iframe 
+									iframe(width="750" height="421" src="https://www.youtube.com/embed/KwbnLL7KY9w" title="Ubicación de router" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen)
+
+							.section__views__view 
+								.section__views__view__group 
+									h3.section__views__view__group-title Usa tu app Smart Home
+									p.section__views__view__group-text Gestiona tus servicios Claro Hogar de forma fácil y sencilla.
+								.section__views__view__iframe 
+									iframe(width="750" height="421" src="https://www.youtube.com/embed/Xdg_22f-D3E" title="Ubicación de router" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen)
+
+						.section__tabs 
+							ul.section__tabs__list 
+								li.section__tabs__list-item Ubica tu router<br>y repetidores
+								li.section__tabs__list-item Elige el plan adecuado
+								li.section__tabs__list-item Usa equipos modernos
+								li.section__tabs__list-item Potencia tu señal con<br>repetidores
+								li.section__tabs__list-item 5 pasos para una mejor<br>experiencia
+								li.section__tabs__list-item Usa tu app<br>Smart Home
+
+
+
+
+block modal
+
+	//- custom-modal(:cshow="modal1" @close="modal1 = false")
+		template(v-slot:main="")
+			.e1-perumin-modal(data-option='info')
+				hgroup
+					h3 Tratamiento de datos personales 
+				header
+					p
+						| Autorizo a AMERICA MOVIL PERU S.A.C. con domicilio en Av. Nicol&aacute;s Arriola N&deg; 480, Santa Catalina, La Victoria, provincia y departamento de Lima (CLARO), para tratar mis datos personales y registrarlos en el Banco de Datos Personales &ldquo;Clientes&rdquo; de su titularidad, con la finalidad de llamarme o enviarme mensajes de texto (SMS), mensajes electr&oacute;nicos y/o correos electr&oacute;nicos con contenido informativo, publicitario y/o promocional sobre los productos y/o servicios que he solicitado mediante este formulario. Declaro conocer que (i) mis datos ser&aacute;n registrados por el tiempo necesario para cumplir con la finalidad expuesta, o hasta que decida revocar mi autorizaci&oacute;n, (ii) CLARO podr&aacute; compartir su informaci&oacute;n con terceros encargados del tratamiento de sus datos personales, (iii) mi autorizaci&oacute;n resulta facultativa, pero en caso de negativa, la finalidad expuesta no podr&aacute; realizarse, (iv) podr&eacute; ejercer los derechos ARCO (Acceso, Rectificaci&oacute;n, Cancelaci&oacute;n y Oposici&oacute;n); en los puntos de atenci&oacute;n designados para tal efecto o a trav&eacute;s del siguiente 
+						a(href='https://www.claro.com.pe/legal-y-regulatorio/derechos-arco/' target='_blank') enlace. 
+					br
+					p
+						| Para consultar el detalle de los encargados de tratamiento y mayor informaci&oacute;n, revisa nuestra 
+						a(href='https://www.claro.com.pe/proteccion-datos/' target='_blank') Pol&iacute;tica de Privacidad 
+				footer
+					a.e1-perumin-modal__btn-default(@click="modal1 = false") Entendido
+
+
+	//- custom-modal(:cshow="modal2" @close="modal2 = false")
+		template(v-slot:main="")
+			.e1-perumin-modal(data-option='info')
+				hgroup
+					h3 Quiero recibir promociones y beneficios de Claro
+				header
+					p
+						| En aplicaci&oacute;n del art&iacute;culo 58 e) de la Ley N&deg; 29571, solicito , mediante mi consentimiento libre, previo, informado, expreso e inequ&iacute;voco, que AMERICA MOVIL PERU S.A.C. con domicilio en Av. Nicol&aacute;s Arriola N&deg; 480, Santa Catalina, La Victoria, provincia y departamento de Lima (CLARO), me contacte con fines publicitarios por llamadas, mensajes de texto (SMS), mensajes electr&oacute;nicos, correos electr&oacute;nicos y/o por cualquier otro medio an&aacute;logo de comunicaci&oacute;n, sobre cualquier producto y/o servicio de CLARO a la l&iacute;nea telef&oacute;nica y/o correo electr&oacute;nico utilizados para completar este formulario.
+					br
+					p
+						| Declaro conocer que (i) mis datos ser&aacute;n registrados en el Banco de Datos Personales &ldquo;Clientes&rdquo; de CLARO para cumplir con la finalidad expuesta hasta que decida revocar mi consentimiento, (ii) CLARO podr&aacute; compartir mi informaci&oacute;n con terceros encargados del tratamiento de sus datos personales, (iii) mi consentimiento resulta facultativo, pero en caso de negativa, la finalidad expuesta no podr&aacute; realizarse, (iv) podr&eacute; ejercer los derechos ARCO (Acceso, Rectificaci&oacute;n, Cancelaci&oacute;n y Oposici&oacute;n); en los puntos de atenci&oacute;n designados para tal efecto o a trav&eacute;s del siguiente 
+						a(href='https://www.claro.com.pe/legal-y-regulatorio/derechos-arco/' target='_blank') enlace. 
+						| Podr&eacute; consultar el detalle de los encargados de tratamiento y mayor informaci&oacute;n, revisando la 
+						a(href='https://www.claro.com.pe/proteccion-datos/' target='_blank') Pol&iacute;tica de Privacidad.
+				footer
+					a.e1-perumin-modal__btn-default(@click="modal2 = false") Entendido
+
+	//- custom-modal(:cshow="modal3" @close="modal3 = false")
+		template(v-slot:main="")
+			.e1-planes-modal(data-option='info')
+				.e1-planes-modal__left 
+					picture 
+						source(media="(max-width:480px) and (orientation: portrait)" :srcset="dataModal.bgMobile")
+						source(media="(max-width:770px) and (orientation: portrait)" :srcset="dataModal.bgTablet")
+						source(media="(max-width:1368px) and (orientation: landscape)" :srcset="dataModal.bgDesktop")
+						img(:src="dataModal.bgDesktop" :alt="dataModal.title")
+				.e1-planes-modal__right 
+					hgroup.header 	
+						h2.header__title {{dataModal.title}}
+					.customAcordeon 
+						dl.customAcordeon__dl 
+							dt(class='clssHV') 
+								input(class="check" type="text" hidden id="ct0")
+								label(for="ct0" class="expand") ¿Qué es?
+								.cvrDown 
+							dd.active(class="clssDownHV") 
+								p {{dataModal.description}}
+						dl.customAcordeon__dl(v-for="(item, iIndex) in dataModal.structure" :key="iIndex")
+							dt(class='clssHV') 
+								input(class="check" type="text" hidden :id="`ct${iIndex+1}`") 
+								label(:for="`ct${iIndex+1}`" class="expand") {{item.title}}
+								.cvrDown 
+							dd(class="clssDownHV")
+								ul 
+									li(v-for="(acordeon, iAcordeon) in item.description" :key="iAcordeon") {{acordeon.tamp}} 
+
+
+					.customFooter 
+						button.customFooter__close(@click="modal3 = false") Entendido
+
+
+block css
+
+	//-link(rel='stylesheet' type='text/css' href=path+'components/modal/modal.css' charset="utf-8")
+
+	//-link(rel="preload" href=path+"components/modal/modal.css" as="style" onload="this.onload=null;this.rel='stylesheet'")
+	//- link(rel='stylesheet' type='text/css' href=path+'components/modal/modal.css' charset="utf-8")
+	//-noscript
+		link(rel="stylesheet" href=path+"components/modal/modal.css")
+
+
+block javascript
+
+	script(type='text/javascript' src= path+'js/library/slick.js')
+	//- script(type="module" src=path+"js/main.js" async)
+	script(type="text/javascript").
+		$(document).ready(function() {
+			function sliderResize(slider) {
+				window.addEventListener("resize", function(){
+					$(slider).slick('resize')
+				}, false);
+			}
+
+			var mq = window.matchMedia("(max-width: 500px)");
+
+			const tabs__views = document.querySelectorAll('.section__main[data-show="sectionInternet"] > .section__views > .section__views__view')
+
+			const tabs__button = document.querySelectorAll('.section__main[data-show="sectionInternet"] > .section__tabs > .section__tabs__list > .section__tabs__list-item')
+
+
+			tabs__button.forEach(function(e, i){
+				e.onclick = function() {
+					tabs__button.forEach(function(e){
+						e.classList.remove('active');
+					})
+					tabs__views.forEach(function(e){
+						e.classList.remove('active');
+					})
+
+					tabs__button[i].classList.add('active')
+					tabs__views[i].classList.add('active')
+				}
+			});
+
+			tabs__button[0].classList.add('active');
+			tabs__views[0].classList.add('active');
+
+
+			const call__to__action = document.querySelectorAll('.itemCard__main__footer-link');
+
+			const modals = document.querySelectorAll('.section__modals[data-content="modals"] > .section__modals__item')
+			//- console.log("modals", modals)
+
+			const btns__close = document.querySelectorAll('.section__modals[data-content="modals"] > .section__modals__item > .content > .content__close')
+			//- console.log("btns__close", btns__close)
+
+
+			call__to__action.forEach(function(e, i) {
+				e.onclick = function() {
+					console.log(i, "i")
+
+					modals[i].classList.add('active');
+
+					btns__close.forEach(function(e, index) {
+						e.onclick = function() {
+							modals[index].classList.remove('active');
+						}
+					})
+				}
+			})
+
+
+			$("#slider_5steps").slick({
+				dots: true,
+				arrows: true,
+				infinite: true,
+				centerMode: true,
+				autoplay: false,
+				speed: 300,
+				slidesToShow: 3,
+				slidesToScroll: 3,
+				variableWidth: true,
+				initialSlide: 1,
+				responsive: [
+					{
+						breakpoint: 1025,
+						settings: {
+							slidesToShow: 2,
+							slidesToScroll: 2,
+							infinite: false,
+							initialSlide: 0,
+							centerMode: false,
+						}
+					},
+					{
+						breakpoint: 769,
+						settings: {
+							slidesToShow: 2,
+							slidesToScroll: 2,
+							initialSlide: 0,
+							centerMode: false,
+						}
+					},
+					{
+						breakpoint: 480,
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1,
+							initialSlide: 0,
+							centerMode: false,
+						}
+					}
+					// You can unslick at a given breakpoint now by adding:
+					// settings: "unslick"
+					// instead of a settings object
+				]
+			});
+		})
