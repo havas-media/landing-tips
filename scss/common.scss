@@ -1,6 +1,6 @@
 /* Library  */
 
-@import "library/font-awesome/font-awesome";
+// @import "library/font-awesome/font-awesome";
 
 /* Base  */
 
@@ -10,16 +10,16 @@
 @import "helpers/reset";
 @import "helpers/extends";
 @import "helpers/responsive";
-@import "helpers/extras";
+// @import "helpers/extras";
 @import "helpers/functions";
 @import "helpers/flexbox";
 
 
 
-@import "elements/e1_form";
-@import "elements/e1_modal";
+// @import "elements/e1_form";
+// @import "elements/e1_modal";
 
-@import "core/layout";
+// @import "core/layout";
 @import "pages/page1";
 // @import "pages/page2";
 // @import "pages/page3";
@@ -34,11 +34,11 @@
 
 /* Library  */
 
-@import "library/toastr";
+// @import "library/toastr";
 //@import "library/vue-popper/vue-popper";
 //@import "library/slick/slick";
 //@import "library/slick/slick-theme";
 
-@import "library/vue3carousel";
+// @import "library/vue3carousel";
 
 /******************************************/
